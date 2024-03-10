@@ -20,7 +20,7 @@
 .title {
     color: var(--clr-neon-green);
     letter-spacing: 4px;
-    font-size: var(--size-250);
+    font-size: var(--size-300);
 }
 
 .text,
@@ -44,6 +44,10 @@
     left: 50%;
     bottom: 0%;
     transform: translate(-50%, 28px);
+}
+
+.container > button:hover {
+    box-shadow: 0 0 24px 2px var(--clr-neon-green);
 }
 
 .error {

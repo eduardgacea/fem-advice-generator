@@ -15,7 +15,7 @@ function Generator() {
                 <div className={styles.error}>{error instanceof Error ? error.message : error}</div>
             ) : (
                 <>
-                    <div className={styles.title}>{`ADVICE #${advice?.id}`}</div>
+                    <h1 className={styles.title}>{`ADVICE #${advice?.id}`}</h1>
                     <div className={styles.text}>&ldquo;{`${advice?.advice}`}&rdquo;</div>
                 </>
             )}
