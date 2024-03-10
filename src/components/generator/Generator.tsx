@@ -8,7 +8,7 @@ function Generator() {
     const width = useScreenWidth();
 
     return (
-        <div className={styles.container}>
+        <main className={styles.container}>
             {isLoading ? (
                 <div className={styles.text}>Loading...</div>
             ) : isError ? (
@@ -19,11 +19,11 @@ function Generator() {
                     <div className={styles.text}>&ldquo;{`${advice?.advice}`}&rdquo;</div>
                 </>
             )}
-            <img src={`pattern-divider-${width < 768 ? "mobile" : "desktop"}.svg`} />
+            <img src={`pattern-divider-${width < 768 ? "mobile" : "desktop"}.svg`} alt="separator" />
             <button onClick={fetchAdvice}>
-                <img src="icon-dice.svg" />
+                <img src="icon-dice.svg" alt="new advice button" />
             </button>
-        </div>
+        </main>
     );
 }
 
