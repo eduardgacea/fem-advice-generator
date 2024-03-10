@@ -1,5 +1,7 @@
+import Generator from "./components/generator/Generator";
+
 function App() {
-    return <div>App</div>;
+    return <Generator />;
 }
 
 export default App;
